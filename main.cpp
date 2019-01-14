@@ -22,7 +22,6 @@ int main() {
   auto a  = Guard_state::start;
   gs.push_back(Guards(1995, 12, 23, 12, 33, a));
 
-  std::cout << "test\n";
   Guard_state state;
 
 
