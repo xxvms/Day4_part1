@@ -7,6 +7,8 @@
 #include <map>
 void read_file_string(std::vector<std::string> &import_file);
 void import_data_to_guards(std::vector<std::string> &puzzle, std::vector<std::string> &split_p);
+void import_data_to_map(const std::vector<std::string>& input_from_file, std::map<int, std::vector<Guards>> & destination_file);
+
 
 int main() {
 
@@ -15,19 +17,13 @@ int main() {
 
   read_file_string(puzzle_input);
 
+  std::map<int, std::vector<Guards> >  set_of_data; // database of my guards and their timestamp
+
+  import_data_to_map(puzzle_input, set_of_data);
 
 
-  std::map<int, std::vector<Guards>> set_of_data;
-  std::vector<Guards> gs;
-  auto a  = Guard_state::start;
-  gs.push_back(Guards(1995, 12, 23, 12, 33, a));
-
-  Guard_state state;
 
 
-  //set_of_data.insert(1, gs.push_back(1995, 12, 23, 12, 33, a));
-
-//    Guards(int year, int month, int day, int h, int m, Guard_state state);
 
   std::cout << "test\n";
 
@@ -82,3 +78,72 @@ void import_data_to_guards(std::vector<std::string> &puzzle, std::vector<std::st
     }
   }
 } // I don't think I will use this
+
+void import_data_to_map(const std::vector<std::string>& input_from_file, std::map<int, std::vector<Guards>> & destination_file){
+
+  std::vector<Guards>my_guards_timestamps{}; // vector of timestamps
+  int ID = 0;
+  std::string IDS{};
+  std::string tmp{};
+  int awake = 0;
+  int asleep = 0;
+
+  for (auto const &line : input_from_file){
+
+    std::cout << line << '\n';
+    auto GuardID = std::find(std::begin(line), std::end(line), '#');
+
+          if (*GuardID) {
+              while (*GuardID != ' ') {
+
+                  *GuardID++;
+                  std::cout << *GuardID << '\n';
+                  if (isdigit(*GuardID)) {
+                      IDS.insert(0, 1, *GuardID);
+                      tmp.append(IDS);
+                      IDS = {};
+                  }
+              }
+          }
+          if(!tmp.empty()) {
+              ID = std::stoi(tmp);
+              tmp = {};
+          }
+
+      if (ID != 0) {
+          my_guards_timestamps.emplace_back(ID, asleep, awake);
+          ID = 0;
+      }
+    }
+
+
+    {
+        destination_file.insert(std::make_pair(ID, my_guards_timestamps));
+    }
+  std::cout << "blach\n";
+}
+/*
+ *            std::string min{};
+              std::string falls {"falls"};
+              auto result = line.find(falls);
+              std::cout << "Result: " << result << '\n';
+              if (std::string::npos ==  result){
+                  std::cout << "no luck\n";
+                  //[1518-11-01 00:05] falls asleep
+                 // std::string tmpS = result-4;
+                 // std::cout << tmpS << '\n';
+                  if (isdigit(tmpS)) {
+                      min.insert(0, 1, tmpS);
+                      tmpS.append(IDS);
+                      min = {};
+                  }
+                  if(tmpS != "") {
+                      ID = std::stoi(tmpS);
+                      tmp = {};
+                      std::string min{};
+}else{
+std::cout << "Didn't found awake\n";
+}
+
+
+*/

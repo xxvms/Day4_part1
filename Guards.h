@@ -6,26 +6,23 @@
 #define DAY4_PART1_GUARDS_H
 
 #include <chrono>
+#include <iostream>
+#include <algorithm>
 
-
-enum class Guard_state{
-    start,
-    asleep,
-    awake
-};
 
 class Guards {
 private:
 
-    int Year;
-    int Month;
-    int Day;
-    int hour;
-    int minutes;
-    Guard_state guard_state;
+    int ID;
+    int asleep;
+    int awake;
+
+
 public:
-    Guards(int year, int month, int day, int h, int m, Guard_state i);
-    ~Guards();
+    Guards() = default;
+    Guards(int id,int asl, int awa);
+    Guards& operator=(Guards other);
+    ~Guards() = default;
 };
 
 
