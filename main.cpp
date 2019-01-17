@@ -93,7 +93,7 @@ void import_data_to_map(const std::vector<std::string>& input_from_file, std::ma
     std::cout << line << '\n';
     auto GuardID = std::find(std::begin(line), std::end(line), '#');
 
-          if (*GuardID) {
+          if (*GuardID) {                   // Extracting ID from the line and saving it into tmp string
               while (*GuardID != ' ') {
 
                   *GuardID++;
@@ -105,12 +105,18 @@ void import_data_to_map(const std::vector<std::string>& input_from_file, std::ma
                   }
               }
           }
-          if(!tmp.empty()) {
+
+          if(!tmp.empty()) {                // converting string with ID into INT
               ID = std::stoi(tmp);
               tmp = {};
           }
 
-      if (ID != 0) {
+
+
+
+
+          if (ID != 0) {
+
           my_guards_timestamps.emplace_back(ID, asleep, awake);
           ID = 0;
       }
