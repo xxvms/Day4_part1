@@ -1,38 +1,57 @@
-#include <string>
+#include "Guards.h"
 #include <algorithm>
 #include <fstream>
 #include <iostream>
-#include <vector>
-#include "Guards.h"
 #include <map>
+#include <string>
+#include <vector>
+#include <sstream>
 void read_file_string(std::vector<std::string> &import_file);
-void import_data_to_guards(std::vector<std::string> &puzzle, std::vector<std::string> &split_p);
-void import_data_to_map(const std::vector<std::string>& input_from_file, std::map<int, std::vector<Guards>> & destination_file);
+void import_data_to_guards(std::vector<std::string> &puzzle,
+                           std::vector<std::string> &split_p);
+void import_data_to_map(const std::vector<std::string> &input_from_file,
+                        std::map<int, std::vector<Guards>> &destination_file);
 
 
 int main() {
 
-  std::vector<std::string> puzzle_input;      // containers for initial puzzle input
-  std::vector<std::string> split_p{};           // container of split puzzles
+  std::vector<std::string> puzzle_input; // containers for initial puzzle input
+  std::vector<std::string> split_p{};    // container of split puzzles
 
   read_file_string(puzzle_input);
 
-  std::map<int, std::vector<Guards> >  set_of_data; // database of my guards and their timestamp
+  std::map<int, std::vector<Guards>>
+      set_of_data; // database of my guards and their timestamp
 
   import_data_to_map(puzzle_input, set_of_data);
-
-
-
-
 
   std::cout << "test\n";
 
   return 0;
 }
 
+/*int extract_from_string(std::forward_iterator_tag GuardID) {
+
+  std::string IDS{};
+std::string tmp[{};
+int ID = 0;
+
+if (isdigit(*GuardID)) {
+    IDS.insert(0, 1, *GuardID);
+    tmp.append(IDS);
+    IDS = {};
+}
+
+if (!tmp.empty()) {                // converting string with ID into INT
+    ID = std::stoi(tmp);
+    tmp = {};
+}
+return ID;
+}; // function to save extracted data to my data
+*/
 
 void read_file_string(std::vector<std::string> &import_file) {
-  std::ifstream file("Day4.txt");
+  std::ifstream file("Day4test.txt");
   std::string data{};
   if (!file.is_open()) {
     std::cout << "File is not open\n";
@@ -45,7 +64,8 @@ void read_file_string(std::vector<std::string> &import_file) {
 
 } // changing SOURCE FILE!!!!!!!!
 
-void import_data_to_guards(std::vector<std::string> &puzzle, std::vector<std::string> &split_puzzle) {
+void import_data_to_guards(std::vector<std::string> &puzzle,
+                           std::vector<std::string> &split_puzzle) {
 
   //[1518-11-01 00:00] Guard #10 begins shift
 
@@ -79,77 +99,75 @@ void import_data_to_guards(std::vector<std::string> &puzzle, std::vector<std::st
   }
 } // I don't think I will use this
 
-void import_data_to_map(const std::vector<std::string>& input_from_file, std::map<int, std::vector<Guards>> & destination_file){
+void import_data_to_map(const std::vector<std::string> &input_from_file,
+                        std::map<int, std::vector<Guards>> &destination_file) {
 
-  std::vector<Guards>my_guards_timestamps{}; // vector of timestamps
+  std::vector<Guards> my_guards_timestamps{}; // vector of timestamps
   int ID = 0;
-  std::string IDS{};
-  std::string tmp{};
+  bool sleep = true;
   int awake = 0;
   int asleep = 0;
+  std::stringstream ss;
 
-  for (auto const &line : input_from_file){
+  for (auto const &line : input_from_file) {
 
     std::cout << line << '\n';
     auto GuardID = std::find(std::begin(line), std::end(line), '#');
+    auto Asleep = std::find(std::begin(line), std::end(line), ':');
 
-          if (*GuardID) {                   // Extracting ID from the line and saving it into tmp string
-              while (*GuardID != ' ') {
+    if (*GuardID or *Asleep) {
+        if (*GuardID) { // Extracting ID from the line and saving it into tmp
+            // string
+            while (*GuardID != ' ') {
+                *GuardID++;
+                if (isdigit(*GuardID)) {
+                    ss << *GuardID;
+                }
+            }
+            ss >> ID;
+            std::cout << "ID: " << ID << '\n';
+            ss.clear();
 
-                  *GuardID++;
-                  std::cout << *GuardID << '\n';
-                  if (isdigit(*GuardID)) {
-                      IDS.insert(0, 1, *GuardID);
-                      tmp.append(IDS);
-                      IDS = {};
-                  }
-              }
-          }
+        } else if (*Asleep and sleep) {
 
-          if(!tmp.empty()) {                // converting string with ID into INT
-              ID = std::stoi(tmp);
-              tmp = {};
-          }
+            while (*Asleep != ']') {
+                *Asleep++;
+                if (isdigit(*Asleep)) {
+                    std::cout << "Asl: " << *Asleep << '\n';
+                    ss << *Asleep;
+                }
 
-
+            }
+            sleep = false;
+            ss >> asleep;
+            ss.clear();
+            std::cout << "Asleep: " << asleep << '\n';
 
 
+        } else if (*Asleep and !sleep) {
 
-          if (ID != 0) {
-
+            while (*Asleep != ']') {
+                *Asleep++;
+                if (isdigit(*Asleep)) {
+                    ss << *Asleep;
+                }
+            }
+            ss >> awake;
+            ss.clear();
+            std::cout << "Awake: " << awake << '\n';
+            sleep = true;
+        }
+    } else if (ID != 0) {
           my_guards_timestamps.emplace_back(ID, asleep, awake);
           ID = 0;
       }
-    }
+  }
+    std::cout << "blach\n";
+
+  destination_file.insert(std::make_pair(ID, my_guards_timestamps));
 
 
-    {
-        destination_file.insert(std::make_pair(ID, my_guards_timestamps));
-    }
-  std::cout << "blach\n";
+
+
+
 }
-/*
- *            std::string min{};
-              std::string falls {"falls"};
-              auto result = line.find(falls);
-              std::cout << "Result: " << result << '\n';
-              if (std::string::npos ==  result){
-                  std::cout << "no luck\n";
-                  //[1518-11-01 00:05] falls asleep
-                 // std::string tmpS = result-4;
-                 // std::cout << tmpS << '\n';
-                  if (isdigit(tmpS)) {
-                      min.insert(0, 1, tmpS);
-                      tmpS.append(IDS);
-                      min = {};
-                  }
-                  if(tmpS != "") {
-                      ID = std::stoi(tmpS);
-                      tmp = {};
-                      std::string min{};
-}else{
-std::cout << "Didn't found awake\n";
-}
-
-
-*/
