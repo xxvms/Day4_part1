@@ -7,30 +7,82 @@
 #include <sstream>
 #include <string>
 #include <vector>
+
 void read_file_string(std::vector<std::string> &import_file);
-void import_data_to_guards(std::vector<std::string> &puzzle,
-                           std::vector<std::string> &split_p);
-void import_data_to_map(const std::vector<std::string> &input_from_file,
-                        std::map<int, std::vector<Guards>> &destination_file);
+void import_data_to_vec(const std::vector<std::string> &input_from_file,
+                        std::vector<Guards> &destination_file);
+void convert_to_map(const std::vector<Guards>& input_from_vector, std::map<int, std::vector<int>>& my_guards_in_Map);
+
+void finding_sleeper(const std::map<int, std::vector<int>>& my_guards_in_Map, std::map<int, std::vector<int>>& sleeper);
 
 int main() {
 
   std::vector<std::string> puzzle_input; // containers for initial puzzle input
-  std::vector<std::string> split_p{};    // container of split puzzles
+  std::vector<Guards> set_of_data; // database of my guards and their timestamp
+  std::map<int, std::vector< int>> file_with_g; // lets see if I can keep here map of my guards and their times awake & asleep
+  std::map<int, std::vector< int>> sleeping_beauty; // file I will use to bring my sleeping beauty back to main();
 
   read_file_string(puzzle_input);
 
-  std::map<int, std::vector<Guards>>
-      set_of_data; // database of my guards and their timestamp
+  import_data_to_vec(puzzle_input, set_of_data);
 
-  import_data_to_map(puzzle_input, set_of_data);
+  convert_to_map(set_of_data, file_with_g);
 
-  std::sort(std::begin(set_of_data), std::end(set_of_data));
+  finding_sleeper(file_with_g, sleeping_beauty);
 
-  std::cout << "test\n";
+  std::cout << "end of main\n";
 
   return 0;
 }
+
+void finding_sleeper(const std::map<int, std::vector<int>>& my_guards_in_Map, std::map<int, std::vector<int>>& sleeper){
+
+    std::map<int, std::vector<int>> tmp;
+    int count_tmp = 0;
+    for (auto a : my_guards_in_Map){
+
+        //std::cout << "first: " << a.first << '\n';
+        for (size_t i = 0; i < my_guards_in_Map.size(); ++i){
+
+            //std::cout << "second: " << a.second.at(i) << '\n';
+            count_tmp += a.second.at(i);
+        }
+        tmp[a.first].push_back(count_tmp);
+        count_tmp = 0;
+    }
+
+   // std::sort(std::begin(tmp.sec))
+
+    std::cout << "end of finding sleeper\n";
+
+}
+
+
+void convert_to_map(const std::vector<Guards>& input_from_vector, std::map<int, std::vector<int>>& my_guards_in_Map){
+
+
+  for (const auto &i : input_from_vector) {
+
+    auto& id = i.ID; // thanks Olipro this was an amazing tip to simplify my code :)
+    auto& asle = i.asleep;
+    auto& awk = i.awake;
+
+    auto tmp = id;
+
+    /* Thanks @bush :)
+     *  std::map<int, std::vector<int>> map;
+        map[1].push_back(1); // creates a new vector at 1, resulting in {"1": [1]}
+        map[1].push_back(2); // uses previous vector at 1, result is {"1": [1, 2]}
+     */
+
+
+    my_guards_in_Map[id].push_back(asle);
+    my_guards_in_Map[id].push_back(awk);
+
+
+  }
+  std::cout << "End of convertion to map\n";
+} // converting my vector to the map with vector
 
 
 void read_file_string(std::vector<std::string> &import_file) {
@@ -41,17 +93,16 @@ void read_file_string(std::vector<std::string> &import_file) {
   } else {
     while (std::getline(file, data))
       import_file.push_back(data);
-    std::cout << import_file.size() << " <-size\n";
+    std::cout <<"Size of the imported file: " << import_file.size() << '\n';
+
   }
   std::sort(import_file.begin(), import_file.end());
 
 } // changing SOURCE FILE!!!!!!!!
 
+void import_data_to_vec(const std::vector<std::string> &input_from_file,
+                        std::vector<Guards> &destination_file) {
 
-void import_data_to_map(const std::vector<std::string> &input_from_file,
-                        std::map<int, std::vector<Guards>> &destination_file) {
-
-  std::vector<Guards> my_guards_timestamps{}; // vector of timestamps
   bool sleep = true;
   int ID = 0;
   std::stringstream ss;
@@ -100,14 +151,10 @@ void import_data_to_map(const std::vector<std::string> &input_from_file,
         ss >> awake;
         ss.clear();
         sleep = true;
-        my_guards_timestamps.emplace_back(ID, asleep, awake);
+        destination_file.emplace_back(ID, asleep, awake);
       }
     } else if (ID != 0) {
-    std::cout << "Blank for now\n";
+      std::cout << "Blank for now\n";
     }
   }
-
-  destination_file.insert(std::make_pair(ID, my_guards_timestamps));
 } // creating file with my guards and times when they are awake or asleep
-
-

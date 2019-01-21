@@ -11,7 +11,7 @@
 
 
 class Guards {
-private:
+public:
 
     int ID;
     int asleep;
