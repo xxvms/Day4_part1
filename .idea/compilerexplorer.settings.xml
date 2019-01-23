@@ -2820,6 +2820,20 @@
         <entry>
           <key>
             <LocalCompilerPath>
+              <option name="path" value="/usr/bin/gcc" />
+            </LocalCompilerPath>
+          </key>
+          <value>
+            <LocalCompilerSettings>
+              <option name="name" value="GCC" />
+              <option name="version" value="5.5.0" />
+              <option name="target" value="x86_64" />
+            </LocalCompilerSettings>
+          </value>
+        </entry>
+        <entry>
+          <key>
+            <LocalCompilerPath>
               <option name="path" value="/usr/bin/c++" />
             </LocalCompilerPath>
           </key>
@@ -2861,11 +2875,11 @@
                 <CompilerMatch>
                   <option name="remoteCompilerInfo">
                     <RemoteCompilerInfo>
-                      <option name="id" value="g540" />
-                      <option name="name" value="x86-64 gcc 5.4" />
+                      <option name="id" value="g72" />
+                      <option name="name" value="x86-64 gcc 7.2" />
                       <option name="language" value="c++" />
-                      <option name="version" value="g++ (GCC-Explorer-Build) 5.4.0" />
-                      <option name="executable" value="/opt/compiler-explorer/gcc-5.4.0/bin/g++" />
+                      <option name="version" value="g++ (GCC-Explorer-Build) 7.2.0" />
+                      <option name="executable" value="/opt/compiler-explorer/gcc-7.2.0/bin/g++" />
                     </RemoteCompilerInfo>
                   </option>
                 </CompilerMatch>
@@ -3998,6 +4012,1331 @@
                         <option name="executable" value="/opt/compiler-explorer/gcc-5.5.0/bin/g++" />
                       </RemoteCompilerInfo>
                     </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g6" />
+                        <option name="name" value="x86-64 gcc 6.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 6.1.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-6.1.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g62" />
+                        <option name="name" value="x86-64 gcc 6.2" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 6.2.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-6.2.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g63" />
+                        <option name="name" value="x86-64 gcc 6.3" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 6.3.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-6.3.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g71" />
+                        <option name="name" value="x86-64 gcc 7.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 7.1.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-7.1.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g72" />
+                        <option name="name" value="x86-64 gcc 7.2" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 7.2.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-7.2.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g73" />
+                        <option name="name" value="x86-64 gcc 7.3" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 7.3.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-7.3.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g74" />
+                        <option name="name" value="x86-64 gcc 7.4" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 7.4.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-7.4.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g81" />
+                        <option name="name" value="x86-64 gcc 8.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 8.1.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-8.1.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g82" />
+                        <option name="name" value="x86-64 gcc 8.2" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 8.2.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-8.2.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="icc1301" />
+                        <option name="name" value="x86-64 icc 13.0.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="icc (ICC) 13.0.1 20121010" />
+                        <option name="executable" value="/opt/compiler-explorer/intel/bin/icc" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="icc16" />
+                        <option name="name" value="x86-64 icc 16.0.3" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="icc (ICC) 16.0.3 20160415" />
+                        <option name="executable" value="/opt/compiler-explorer/intel/xe_2016_update3/bin/icc" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="icc17" />
+                        <option name="name" value="x86-64 icc 17.0.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="icc (ICC) 17.0.0 20160721" />
+                        <option name="executable" value="/opt/compiler-explorer/intel/2017/bin/icc" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="icc18" />
+                        <option name="name" value="x86-64 icc 18.0.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="icc (ICC) 18.0.0 20170811" />
+                        <option name="executable" value="/opt/compiler-explorer/intel-2018.0.033/bin/icc" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="icc19" />
+                        <option name="name" value="x86-64 icc 19.0.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="icc (ICC) 19.0.0.117 20180804" />
+                        <option name="executable" value="/opt/compiler-explorer/intel-2019/bin/icc" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="icc191" />
+                        <option name="name" value="x86-64 icc 19.0.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="icc (ICC) 19.0.1.144 20181018" />
+                        <option name="executable" value="/opt/compiler-explorer/intel-2019.1/bin/icc" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                </list>
+              </option>
+            </CompilerMatches>
+          </value>
+        </entry>
+        <entry>
+          <key>
+            <LocalCompilerPath>
+              <option name="path" value="/usr/bin/gcc" />
+            </LocalCompilerPath>
+          </key>
+          <value>
+            <CompilerMatches>
+              <option name="chosenMatch">
+                <CompilerMatch>
+                  <option name="remoteCompilerInfo">
+                    <RemoteCompilerInfo>
+                      <option name="id" value="g72" />
+                      <option name="name" value="x86-64 gcc 7.2" />
+                      <option name="language" value="c++" />
+                      <option name="version" value="g++ (GCC-Explorer-Build) 7.2.0" />
+                      <option name="executable" value="/opt/compiler-explorer/gcc-7.2.0/bin/g++" />
+                    </RemoteCompilerInfo>
+                  </option>
+                </CompilerMatch>
+              </option>
+              <option name="otherMatches">
+                <list>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="armg454" />
+                        <option name="name" value="ARM gcc 4.5.4 (linux)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="arm-unknown-linux-gnueabi-g++ (crosstool-NG crosstool-ng-1.22.0) 4.5.4" />
+                        <option name="executable" value="/opt/compiler-explorer/arm/gcc-4.5.4/bin/arm-unknown-linux-gnueabi-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="armg464" />
+                        <option name="name" value="ARM gcc 4.6.4 (linux)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="arm-unknown-linux-gnueabi-g++ (crosstool-NG crosstool-ng-1.22.0) 4.6.4" />
+                        <option name="executable" value="/opt/compiler-explorer/arm/gcc-4.6.4/bin/arm-unknown-linux-gnueabi-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="armhfg54" />
+                        <option name="name" value="ARM gcc 5.4 (linux)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="arm-unknown-linux-gnueabihf-g++ (crosstool-NG crosstool-ng-1.23.0-rc2) 5.4.0" />
+                        <option name="executable" value="/opt/compiler-explorer/arm/gcc-5.4.0/arm-unknown-linux-gnueabihf/bin/arm-unknown-linux-gnueabihf-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="arm541" />
+                        <option name="name" value="ARM gcc 5.4.1 (none)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="arm-none-eabi-g++ (GNU Tools for ARM Embedded Processors) 5.4.1 20160919 (release) [ARM/embedded-5-branch revision 240496]" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="armg630" />
+                        <option name="name" value="ARM gcc 6.3.0 (linux)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="arm-unknown-linux-gnueabi-g++ (crosstool-NG crosstool-ng-1.23.0) 6.3.0" />
+                        <option name="executable" value="/opt/compiler-explorer/arm/gcc-6.3.0/arm-unknown-linux-gnueabi/bin/arm-unknown-linux-gnueabi-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="armg640" />
+                        <option name="name" value="ARM gcc 6.4" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="arm-unknown-linux-gnueabi-g++ (GCC) 6.4.0" />
+                        <option name="executable" value="/opt/compiler-explorer/arm/gcc-6.4.0/arm-unknown-linux-gnueabi/bin/arm-unknown-linux-gnueabi-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="arm710" />
+                        <option name="name" value="ARM gcc 7.2.1 (none)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="arm-none-eabi-g++ (GNU Tools for Arm Embedded Processors 7-2017-q4-major) 7.2.1 20170904 (release) [ARM/embedded-7-branch revision 255204]" />
+                        <option name="executable" value="/opt/compiler-explorer/arm/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="armg730" />
+                        <option name="name" value="ARM gcc 7.3" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="arm-unknown-linux-gnueabi-g++ (GCC) 7.3.0" />
+                        <option name="executable" value="/opt/compiler-explorer/arm/gcc-7.3.0/arm-unknown-linux-gnueabi/bin/arm-unknown-linux-gnueabi-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="armg820" />
+                        <option name="name" value="ARM gcc 8.2" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="arm-unknown-linux-gnueabi-g++ (GCC) 8.2.0" />
+                        <option name="executable" value="/opt/compiler-explorer/arm/gcc-8.2.0/arm-unknown-linux-gnueabi/bin/arm-unknown-linux-gnueabi-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="cl19_2015_u3_arm" />
+                        <option name="name" value="ARM msvc v19.0 (WINE)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24210 for ARM" />
+                        <option name="executable" value="/opt/compiler-explorer/windows/19.00.24210/bin/amd64_arm/cl.exe" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="cl19_arm" />
+                        <option name="name" value="ARM msvc v19.10 (WINE)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for ARM" />
+                        <option name="executable" value="/opt/compiler-explorer/windows/19.10.25017/lib/native/bin/amd64_arm/cl.exe" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="cl_new_arm32" />
+                        <option name="name" value="ARM msvc v19.14 (WINE)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26423 for ARM" />
+                        <option name="executable" value="/opt/compiler-explorer/windows/19.14.26423/bin/Hostx64/arm/cl.exe" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="aarchg54" />
+                        <option name="name" value="ARM64 gcc 5.4 (linux)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="aarch64-unknown-linux-gnueabi-g++ (crosstool-NG crosstool-ng-1.23.0-rc2) 5.4.0" />
+                        <option name="executable" value="/opt/compiler-explorer/arm64/gcc-5.4.0/aarch64-unknown-linux-gnueabi/bin/aarch64-unknown-linux-gnueabi-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="arm64g630" />
+                        <option name="name" value="ARM64 gcc 6.3.0 (linux)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="aarch64-unknown-linux-gnueabi-g++ (crosstool-NG crosstool-ng-1.23.0) 6.3.0" />
+                        <option name="executable" value="/opt/compiler-explorer/arm64/gcc-6.3.0/aarch64-unknown-linux-gnueabi/bin/aarch64-unknown-linux-gnueabi-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="arm64g640" />
+                        <option name="name" value="ARM64 gcc 6.4" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="aarch64-unknown-linux-gnu-g++ (GCC) 6.4.0" />
+                        <option name="executable" value="/opt/compiler-explorer/arm64/gcc-6.4.0/aarch64-unknown-linux-gnu/bin/aarch64-unknown-linux-gnu-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="arm64g730" />
+                        <option name="name" value="ARM64 gcc 7.3" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="aarch64-unknown-linux-gnu-g++ (GCC) 7.3.0" />
+                        <option name="executable" value="/opt/compiler-explorer/arm64/gcc-7.3.0/aarch64-unknown-linux-gnu/bin/aarch64-unknown-linux-gnu-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="arm64g820" />
+                        <option name="name" value="ARM64 gcc 8.2" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="aarch64-unknown-linux-gnu-g++ (GCC) 8.2.0" />
+                        <option name="executable" value="/opt/compiler-explorer/arm64/gcc-8.2.0/aarch64-unknown-linux-gnu/bin/aarch64-unknown-linux-gnu-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="cl_new_arm64" />
+                        <option name="name" value="ARM64 msvc v19.14 (WINE)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26423 for ARM64" />
+                        <option name="executable" value="/opt/compiler-explorer/windows/19.14.26423/bin/Hostx64/arm64/cl.exe" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="avrg454" />
+                        <option name="name" value="AVR gcc 4.5.4" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="avr-g++ (crosstool-NG crosstool-ng-1.22.0) 4.5.4" />
+                        <option name="executable" value="/opt/compiler-explorer/avr/gcc-4.5.4/bin/avr-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="avrg464" />
+                        <option name="name" value="AVR gcc 4.6.4" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="avr-g++ (crosstool-NG crosstool-ng-1.22.0) 4.6.4" />
+                        <option name="executable" value="/opt/compiler-explorer/avr/gcc-4.6.4/bin/avr-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="mips5" />
+                        <option name="name" value="MIPS gcc 5.4" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="mips-unknown-linux-gnu-g++ (crosstool-NG crosstool-ng-1.23.0-rc2) 5.4.0" />
+                        <option name="executable" value="/opt/compiler-explorer/mips/gcc-5.4.0/mips-unknown-linux-gnu/bin/mips-unknown-linux-gnu-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="mips5el" />
+                        <option name="name" value="MIPS gcc 5.4 (el)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="mipsel-unknown-linux-gnu-g++ (crosstool-NG crosstool-ng-1.23.0-rc2) 5.4.0" />
+                        <option name="executable" value="/opt/compiler-explorer/mipsel/gcc-5.4.0/mipsel-unknown-linux-gnu/bin/mipsel-unknown-linux-gnu-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="mips564" />
+                        <option name="name" value="MIPS64 gcc 5.4" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="mips64-unknown-linux-gnu-g++ (crosstool-NG crosstool-ng-1.23.0-rc2) 5.4.0" />
+                        <option name="executable" value="/opt/compiler-explorer/mips64/gcc-5.4.0/mips64-unknown-linux-gnu/bin/mips64-unknown-linux-gnu-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="mips564el" />
+                        <option name="name" value="MIPS64 gcc 5.4 (el)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="mips64el-unknown-linux-gnu-g++ (crosstool-NG crosstool-ng-1.23.0-rc2) 5.4.0" />
+                        <option name="executable" value="/opt/compiler-explorer/mips64el/gcc-5.4.0/mips64el-unknown-linux-gnu/bin/mips64el-unknown-linux-gnu-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="msp430g453" />
+                        <option name="name" value="MSP430 gcc 4.5.3" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="msp430-g++ (GCC) 4.5.3" />
+                        <option name="executable" value="/opt/compiler-explorer/msp430/gcc-4.5.3/bin/msp430-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="msp430g530" />
+                        <option name="name" value="MSP430 gcc 5.3.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="msp430-elf-g++ (SOMNIUM Technologies Limited - msp430-gcc 5.3.0.219) 5.3.0" />
+                        <option name="executable" value="/opt/compiler-explorer/msp430-gcc-5.3.0.219_linux32/bin/msp430-elf-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="msp430g621" />
+                        <option name="name" value="MSP430 gcc 6.2.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="msp430-elf-g++ (SOMNIUM Technologies Limited - msp430-gcc 6.2.1.16) 6.2.1 20161212" />
+                        <option name="executable" value="/opt/compiler-explorer/msp430-gcc-6.2.1.16_linux64/bin/msp430-elf-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="ppcg48" />
+                        <option name="name" value="PowerPC gcc 4.8.5" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="powerpc-unknown-linux-gnu-g++ (crosstool-NG crosstool-ng-1.22.0) 4.8.5" />
+                        <option name="executable" value="/opt/compiler-explorer/powerpc/gcc-4.8.5/bin/powerpc-unknown-linux-gnu-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="ellcc0133" />
+                        <option name="name" value="ellcc 0.1.33" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 4.0.0 (trunk)" />
+                        <option name="executable" value="/opt/compiler-explorer/ellcc-0.1.33/bin/ecc++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="ellcc0134" />
+                        <option name="name" value="ellcc 0.1.34" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 4.0.0 (trunk)" />
+                        <option name="executable" value="/opt/compiler-explorer/ellcc-0.1.34/bin/ecc++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="ellcc170716" />
+                        <option name="name" value="ellcc 2017-07-16" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="ecc version 2017-07-16 (http://ellcc.org) based on clang version 5.0.0 (trunk 308147)" />
+                        <option name="executable" value="/opt/compiler-explorer/ellcc-2017-07-16/bin/ecc++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="ppc64g8" />
+                        <option name="name" value="power64 AT12.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="powerpc64-unknown-linux-gnu-g++ (crosstool-NG UNKNOWN) 8.2.1 20180727 Advance Toolchain AT12, based on subversion id 263037." />
+                        <option name="executable" value="/opt/compiler-explorer/powerpc64/gcc-at12/powerpc64-unknown-linux-gnu/bin/powerpc64-unknown-linux-gnu-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="ppc64leg8" />
+                        <option name="name" value="power64le AT12.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="powerpc64le-unknown-linux-gnu-g++ (crosstool-NG UNKNOWN) 8.2.1 20180727 Advance Toolchain AT12, based on subversion id 263037." />
+                        <option name="executable" value="/opt/compiler-explorer/powerpc64le/gcc-at12/powerpc64le-unknown-linux-gnu/bin/powerpc64le-unknown-linux-gnu-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="ppc64leclang" />
+                        <option name="name" value="power64le clang (trunk)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 8.0.0 (trunk 351143)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-trunk/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="ppc64leg630" />
+                        <option name="name" value="power64le gcc 6.3.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="powerpc64le-unknown-linux-gnu-g++ (crosstool-NG crosstool-ng-1.23.0) 6.3.0" />
+                        <option name="executable" value="/opt/compiler-explorer/powerpc64le/gcc-6.3.0/powerpc64le-unknown-linux-gnu/bin/powerpc64le-unknown-linux-gnu-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="ppc64clang" />
+                        <option name="name" value="powerpc64 clang (trunk)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 8.0.0 (trunk 351143)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-trunk/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="rv32clang" />
+                        <option name="name" value="riscv32 clang (trunk)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 8.0.0 (trunk 351143)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-trunk/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="cl19_2015_u3_64" />
+                        <option name="name" value="x64 msvc v19.0 (WINE)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24210 for x64" />
+                        <option name="executable" value="/opt/compiler-explorer/windows/19.00.24210/bin/amd64/cl.exe" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="cl19_64" />
+                        <option name="name" value="x64 msvc v19.10 (WINE)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x64" />
+                        <option name="executable" value="/opt/compiler-explorer/windows/19.10.25017/lib/native/bin/amd64/cl.exe" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="vcpp_v19_14_x64" />
+                        <option name="name" value="x64 msvc v19.14" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26428.1 for x64" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="cl_new_64" />
+                        <option name="name" value="x64 msvc v19.14 (WINE)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26423 for x64" />
+                        <option name="executable" value="/opt/compiler-explorer/windows/19.14.26423/bin/Hostx64/x64/cl.exe" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="vcpp_v19_15_x64" />
+                        <option name="name" value="x64 msvc v19.15" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.15.26726 for x64" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="vcpp_v19_16_x64" />
+                        <option name="name" value="x64 msvc v19.16" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27023.1 for x64" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="djggp494" />
+                        <option name="name" value="x86 djggp 4.9.4" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="i586-pc-msdosdjgpp-g++ (GCC) 4.9.4" />
+                        <option name="executable" value="/opt/compiler-explorer/djgpp-4.9.4/bin/i586-pc-msdosdjgpp-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="djggp550" />
+                        <option name="name" value="x86 djggp 5.5.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="i586-pc-msdosdjgpp-g++ (GCC) 5.5.0" />
+                        <option name="executable" value="/opt/compiler-explorer/djgpp-5.5.0/bin/i586-pc-msdosdjgpp-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="djggp640" />
+                        <option name="name" value="x86 djggp 6.4.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="i586-pc-msdosdjgpp-g++ (GCC) 6.4.0" />
+                        <option name="executable" value="/opt/compiler-explorer/djgpp-6.4.0/bin/i586-pc-msdosdjgpp-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="djggp720" />
+                        <option name="name" value="x86 djggp 7.2.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="i586-pc-msdosdjgpp-g++ (GCC) 7.2.0" />
+                        <option name="executable" value="/opt/compiler-explorer/djgpp-7.2.0/bin/i586-pc-msdosdjgpp-g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="cl19_2015_u3_32" />
+                        <option name="name" value="x86 msvc v19.0 (WINE)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24210 for x86" />
+                        <option name="executable" value="/opt/compiler-explorer/windows/19.00.24210/bin/amd64_x86/cl.exe" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="cl19_32" />
+                        <option name="name" value="x86 msvc v19.10 (WINE)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x86" />
+                        <option name="executable" value="/opt/compiler-explorer/windows/19.10.25017/lib/native/bin/amd64_x86/cl.exe" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="vcpp_v19_14_x86" />
+                        <option name="name" value="x86 msvc v19.14" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26428.1 for x86" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="cl_new_32" />
+                        <option name="name" value="x86 msvc v19.14 (WINE)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26423 for x86" />
+                        <option name="executable" value="/opt/compiler-explorer/windows/19.14.26423/bin/Hostx64/x86/cl.exe" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="vcpp_v19_15_x86" />
+                        <option name="name" value="x86 msvc v19.15" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.15.26726 for x86" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="vcpp_v19_16_x86" />
+                        <option name="name" value="x86 msvc v19.16" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27023.1 for x86" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="zapcc190308" />
+                        <option name="name" value="x86-64 Zapcc 190308" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="zapcc clang version 5.0.0 (trunk 295600) (based on LLVM 5.0.0svn) built on Feb 26 2017 19:10:16" />
+                        <option name="executable" value="/opt/compiler-explorer/zapcc-20170226-190308-1.0/bin/zapcc++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang_lifetime" />
+                        <option name="name" value="x86-64 clang (experimental -Wlifetime)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 7.0.0 (https://github.com/mgehre/clang 9a538958ac210964bb5f141b4aee45c5fceaccea) (https://github.com/llvm-mirror/llvm d8e175bca5919de13fe003cab6b10f23af3d055d)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-lifetime-trunk/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang_p1144" />
+                        <option name="name" value="x86-64 clang (experimental P1144)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 8.0.0 (https://github.com/Quuxplusone/clang ad441d687fda536d7811352c2f23e0de851ee319) (https://github.com/llvm-mirror/llvm 5d9602f03d90738c74100fdff6d77c18c7317cc5)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-relocatable-trunk/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang_parmexpr" />
+                        <option name="name" value="x86-64 clang (experimental P1221)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 8.0.0 " />
+                        <option name="executable" value="/opt/compiler-explorer/clang-parmexpr-trunk/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang_autonsdmi" />
+                        <option name="name" value="x86-64 clang (experimental auto NSDMI)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 7.0.0 (https://github.com/cor3ntin/clang 32eb83eb7e8c571100d325eeb2e0f87946389541) (https://github.com/llvm-mirror/llvm 4d00d7aadb69d4e9bbc29b55ba092c1f568666df)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-autonsdmi-trunk/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang_concepts" />
+                        <option name="name" value="x86-64 clang (experimental concepts)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 6.0.0 (https://github.com/saarraz/clang-concepts.git 001d706d89bdee544167c0d4abe42d27c4e53c45) (https://github.com/llvm-mirror/llvm.git 893a41656b527af1b00a1f9e5c8fcecfff62e4b6)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-concepts-trunk/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang_trunk" />
+                        <option name="name" value="x86-64 clang (trunk)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 8.0.0 (trunk 351143)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-trunk/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang30" />
+                        <option name="name" value="x86-64 clang 3.0.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.0 (tags/RELEASE_30/final)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang+llvm-3.0-x86_64-linux-Ubuntu-11_10/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang31" />
+                        <option name="name" value="x86-64 clang 3.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.1 (tags/RELEASE_31/final)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang+llvm-3.1-x86_64-linux-ubuntu_12.04/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang32" />
+                        <option name="name" value="x86-64 clang 3.2" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.2 (tags/RELEASE_32/final)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-3.2/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang33" />
+                        <option name="name" value="x86-64 clang 3.3" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.3 (tags/RELEASE_33/final)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-3.3/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang341" />
+                        <option name="name" value="x86-64 clang 3.4.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.4.1 (tags/RELEASE_34/dot1-rc2)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang+llvm-3.4.1-x86_64-unknown-ubuntu12.04/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang350" />
+                        <option name="name" value="x86-64 clang 3.5" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.5.0 (tags/RELEASE_350/final)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang+llvm-3.5.0-x86_64-linux-gnu/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang351" />
+                        <option name="name" value="x86-64 clang 3.5.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.5.1 (tags/RELEASE_351/rc2)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang+llvm-3.5.1-x86_64-linux-gnu/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang36x" />
+                        <option name="name" value="x86-64 clang 3.6" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.6.2 (tags/RELEASE_362/final)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang+llvm-3.6.2-x86_64-linux-gnu-ubuntu-14.04/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang37x" />
+                        <option name="name" value="x86-64 clang 3.7" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.7.0 (tags/RELEASE_370/final)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang+llvm-3.7.0-x86_64-linux-gnu-ubuntu-14.04/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang371" />
+                        <option name="name" value="x86-64 clang 3.7.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.7.1 (tags/RELEASE_371/final)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang+llvm-3.7.1-x86_64-linux-gnu-ubuntu-14.04/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang380" />
+                        <option name="name" value="x86-64 clang 3.8" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.8.0 (tags/RELEASE_380/final)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang+llvm-3.8.0-x86_64-linux-gnu-ubuntu-14.04/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang381" />
+                        <option name="name" value="x86-64 clang 3.8.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.8.1 (tags/RELEASE_381/final)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang+llvm-3.8.1-x86_64-linux-gnu-ubuntu-14.04/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang390" />
+                        <option name="name" value="x86-64 clang 3.9.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.9.0 (tags/RELEASE_390/final)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang+llvm-3.9.0-x86_64-linux-gnu-ubuntu-16.04/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang391" />
+                        <option name="name" value="x86-64 clang 3.9.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 3.9.1 (tags/RELEASE_391/final 296768)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-3.9.1/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang400" />
+                        <option name="name" value="x86-64 clang 4.0.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 4.0.0 (tags/RELEASE_400/final 299826)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-4.0.0/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang401" />
+                        <option name="name" value="x86-64 clang 4.0.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 4.0.1 (tags/RELEASE_401/final 312238)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-4.0.1/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang500" />
+                        <option name="name" value="x86-64 clang 5.0.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 5.0.0 (tags/RELEASE_500/final 334239)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-5.0.0/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang600" />
+                        <option name="name" value="x86-64 clang 6.0.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 6.0.0 (tags/RELEASE_600/final 334239)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-6.0.0/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="clang700" />
+                        <option name="name" value="x86-64 clang 7.0.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="clang version 7.0.0 (tags/RELEASE_700/final 342594)" />
+                        <option name="executable" value="/opt/compiler-explorer/clang-7.0.0/bin/clang++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="gsnapshot" />
+                        <option name="name" value="x86-64 gcc (trunk)" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 9.0.0 20190115 (experimental)" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-snapshot/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g412" />
+                        <option name="name" value="x86-64 gcc 4.1.2" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC) 4.1.2" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.1.2/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g447" />
+                        <option name="name" value="x86-64 gcc 4.4.7" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.4.7" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.4.7/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g453" />
+                        <option name="name" value="x86-64 gcc 4.5.3" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.5.3" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.5.3/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g464" />
+                        <option name="name" value="x86-64 gcc 4.6.4" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.6.4" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.6.4/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g471" />
+                        <option name="name" value="x86-64 gcc 4.7.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.7.1" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.7.1/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g472" />
+                        <option name="name" value="x86-64 gcc 4.7.2" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.7.2" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.7.2/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g473" />
+                        <option name="name" value="x86-64 gcc 4.7.3" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.7.3" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.7.3/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g474" />
+                        <option name="name" value="x86-64 gcc 4.7.4" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.7.4" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.7.4/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g481" />
+                        <option name="name" value="x86-64 gcc 4.8.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.8.1" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.8.1/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g482" />
+                        <option name="name" value="x86-64 gcc 4.8.2" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.8.2" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.8.2/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g483" />
+                        <option name="name" value="x86-64 gcc 4.8.3" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.8.3" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.8.3/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g484" />
+                        <option name="name" value="x86-64 gcc 4.8.4" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.8.4" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.8.4/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g485" />
+                        <option name="name" value="x86-64 gcc 4.8.5" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.8.5" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.8.5/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g490" />
+                        <option name="name" value="x86-64 gcc 4.9.0" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.9.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.9.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g491" />
+                        <option name="name" value="x86-64 gcc 4.9.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.9.1" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.9.1/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g492" />
+                        <option name="name" value="x86-64 gcc 4.9.2" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.9.2" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.9.2/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g493" />
+                        <option name="name" value="x86-64 gcc 4.9.3" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.9.3" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.9.3/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g494" />
+                        <option name="name" value="x86-64 gcc 4.9.4" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 4.9.4" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-4.9.4/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g510" />
+                        <option name="name" value="x86-64 gcc 5.1" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 5.1.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-5.1.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                    <option name="compilerMatchKind" value="MINOR_MISMATCH" />
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g520" />
+                        <option name="name" value="x86-64 gcc 5.2" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 5.2.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-5.2.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                    <option name="compilerMatchKind" value="MINOR_MISMATCH" />
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g530" />
+                        <option name="name" value="x86-64 gcc 5.3" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 5.3.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-5.3.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                    <option name="compilerMatchKind" value="MINOR_MISMATCH" />
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g540" />
+                        <option name="name" value="x86-64 gcc 5.4" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 5.4.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-5.4.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                    <option name="compilerMatchKind" value="MINOR_MISMATCH" />
+                  </CompilerMatch>
+                  <CompilerMatch>
+                    <option name="remoteCompilerInfo">
+                      <RemoteCompilerInfo>
+                        <option name="id" value="g550" />
+                        <option name="name" value="x86-64 gcc 5.5" />
+                        <option name="language" value="c++" />
+                        <option name="version" value="g++ (GCC-Explorer-Build) 5.5.0" />
+                        <option name="executable" value="/opt/compiler-explorer/gcc-5.5.0/bin/g++" />
+                      </RemoteCompilerInfo>
+                    </option>
+                    <option name="compilerMatchKind" value="EXACT_MATCH" />
                   </CompilerMatch>
                   <CompilerMatch>
                     <option name="remoteCompilerInfo">
@@ -5507,11 +6846,11 @@
                 <CompilerMatch>
                   <option name="remoteCompilerInfo">
                     <RemoteCompilerInfo>
-                      <option name="id" value="g540" />
-                      <option name="name" value="x86-64 gcc 5.4" />
+                      <option name="id" value="g72" />
+                      <option name="name" value="x86-64 gcc 7.2" />
                       <option name="language" value="c++" />
-                      <option name="version" value="g++ (GCC-Explorer-Build) 5.4.0" />
-                      <option name="executable" value="/opt/compiler-explorer/gcc-5.4.0/bin/g++" />
+                      <option name="version" value="g++ (GCC-Explorer-Build) 7.2.0" />
+                      <option name="executable" value="/opt/compiler-explorer/gcc-7.2.0/bin/g++" />
                     </RemoteCompilerInfo>
                   </option>
                 </CompilerMatch>
@@ -6820,5 +8159,6 @@
         </entry>
       </map>
     </option>
+    <option name="additionalSwitches" value="" />
   </component>
 </project>
