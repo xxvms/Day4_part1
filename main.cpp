@@ -140,7 +140,7 @@ void convert_to_map(const std::vector<Guards> &input_from_vector,
      */
 
     my_guards_in_Map[id].push_back(asle);
-    my_guards_in_Map[id].push_back(awk); // add -1
+    my_guards_in_Map[id].push_back(awk-1); // add -1
   }
 
   std::ofstream my_file("Input_from_vec.txt");

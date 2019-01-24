@@ -12,3 +12,4 @@ Guards& Guards::operator=(Guards other) {
     std::swap(asleep, other.asleep);
     std::swap(awake, other.awake);
 }
+
