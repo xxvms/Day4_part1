@@ -1,6 +1,6 @@
 #include "Guards.h"
 #include <algorithm>
-#include <chrono>
+//#include <chrono>
 #include <fstream>
 #include <iostream>
 #include <map>
@@ -43,144 +43,171 @@ int main() {
   return 0;
 }
 void read_file_string(std::vector<std::string> &import_file) {
-    std::ifstream file("Day4.txt");
-    std::string data{};
-    if (!file.is_open()) {
-        std::cout << "File is not open\n";
-    } else {
-        while (std::getline(file, data))
-            import_file.push_back(data);
-        std::cout << "Size of the imported file: " << import_file.size() << '\n';
-    }
-    std::sort(import_file.begin(), import_file.end());
+  std::ifstream file("Day4.txt");
+  std::string data{};
+  if (!file.is_open()) {
+    std::cout << "File is not open\n";
+  } else {
+    while (std::getline(file, data))
+      import_file.push_back(data);
+    std::cout << "Size of the imported file: " << import_file.size() << '\n';
+  }
+  std::sort(import_file.begin(), import_file.end());
 
-    std::cout << "End of reading the file\n";
+  std::ofstream my_file("Sorted_file.txt");
+
+  for (auto a : import_file) {
+    my_file << a << '\n';
+  }
+
+  std::cout << "End of reading the file\n";
 
 } // changing SOURCE FILE!!!!!!!!
 
 void import_data_to_vec(const std::vector<std::string> &input_from_file,
                         std::vector<Guards> &destination_file) {
 
-    bool sleep = true;
-    int ID = 0;
-    std::stringstream ss;
-    // std::chrono::minutes awake;
-    // std::chrono::minutes asleep;
-    int awake = 0;
-    int asleep = 0;
+  bool sleep = true;
+  int ID = 0;
+  std::stringstream ss;
+  // std::chrono::minutes awake;
+  // std::chrono::minutes asleep;
+  int awake = 0;
+  int asleep = 0;
 
-    for (auto const &line : input_from_file) {
+  for (auto const &line : input_from_file) {
 
-        auto GuardID = std::find(std::begin(line), std::end(line), '#');
-        auto Asleep = std::find(std::begin(line), std::end(line), ':');
+    auto GuardID = std::find(std::begin(line), std::end(line), '#');
+    auto Asleep = std::find(std::begin(line), std::end(line), ':');
 
-        if (*GuardID or *Asleep) {
-            if (*GuardID) { // Extracting ID from the line and saving it into tmp
-                // string
-                while (*GuardID != ' ') {
-                    *GuardID++;
-                    if (isdigit(*GuardID)) {
-                        ss << *GuardID;
-                    }
-                }
-                ss >> ID;
-                ss.clear();
-
-            } else if (*Asleep and sleep) {
-
-                while (*Asleep != ']') {
-                    *Asleep++;
-                    if (isdigit(*Asleep)) {
-                        ss << *Asleep;
-                    }
-                }
-                sleep = false;
-                ss >> asleep;
-                ss.clear();
-
-            } else if (*Asleep and !sleep) {
-
-                while (*Asleep != ']') {
-                    *Asleep++;
-                    if (isdigit(*Asleep)) {
-                        ss << *Asleep;
-                    }
-                }
-                ss >> awake;
-                ss.clear();
-                sleep = true;
-                destination_file.emplace_back(ID, asleep, awake);
-            }
-        } else if (ID != 0) {
-            std::cout << "Blank for now\n";
+    if (*GuardID or *Asleep) {
+      if (*GuardID) { // Extracting ID from the line and saving it into tmp
+        // string
+        while (*GuardID != ' ') {
+          *GuardID++;
+          if (isdigit(*GuardID)) {
+            ss << *GuardID;
+          }
         }
+        ss >> ID;
+        ss.clear();
+
+      } else if (*Asleep and sleep) {
+
+        while (*Asleep != ']') {
+          *Asleep++;
+          if (isdigit(*Asleep)) {
+            ss << *Asleep;
+          }
+        }
+        sleep = false;
+        ss >> asleep;
+        ss.clear();
+
+      } else if (*Asleep and !sleep) {
+
+        while (*Asleep != ']') {
+          *Asleep++;
+          if (isdigit(*Asleep)) {
+            ss << *Asleep;
+          }
+        }
+        ss >> awake;
+        ss.clear();
+        sleep = true;
+        destination_file.emplace_back(ID, asleep, awake);
+      }
+    } else if (ID != 0) {
+      std::cout << "Blank for now\n";
     }
-    std::cout << "End of importing to vector\n";
+  }
+  std::cout << "End of importing to vector\n";
 } // creating file with my guards and times when they are awake or asleep
 
 void convert_to_map(const std::vector<Guards> &input_from_vector,
                     std::map<int, std::vector<int>> &my_guards_in_Map) {
 
-    for (const auto &i : input_from_vector) {
-        // thanks Olipro this was an amazing tip to simplify my code :)
-        auto &id = i.ID;
-        auto &asle = i.asleep;
-        auto &awk = i.awake;
+  for (const auto &i : input_from_vector) {
+    // thanks Olipro this was an amazing tip to simplify my code :)
+    auto &id = i.ID;
+    auto &asle = i.asleep;
+    auto &awk = i.awake;
 
-        /* Thanks @bush :)
-        std::map<int, std::vector<int>> map;
-        map[1].push_back(1); // creates a new vector at 1, resulting in {"1": [1]}
-        map[1].push_back(2); // uses previous vector at 1, result is {"1": [1,2]}
-         */
+    /* Thanks @bush :)
+    std::map<int, std::vector<int>> map;
+    map[1].push_back(1); // creates a new vector at 1, resulting in {"1": [1]}
+    map[1].push_back(2); // uses previous vector at 1, result is {"1": [1,2]}
+     */
 
-        my_guards_in_Map[id].push_back(asle);
-        my_guards_in_Map[id].push_back(awk - 1);
-    }
-    std::cout << "End of conversion to map\n";
+    my_guards_in_Map[id].push_back(asle);
+    my_guards_in_Map[id].push_back(awk); // add -1
+  }
+
+  std::ofstream my_file("Input_from_vec.txt");
+
+  for (auto a : input_from_vector) {
+    my_file << "ID: " << a.ID << '\n';
+    my_file << " Asleep: " << a.asleep << '\n';
+    my_file << " Awake: " << a.awake << '\n';
+  }
+
+  std::cout << "End of conversion to map\n";
 } // converting my vector to the map with vector
 
 void finding_sleeper(const std::map<int, std::vector<int>> &my_guards_in_Map,
                      std::map<int, std::vector<int>> &sleeper) {
 
-    std::map<int, std::vector<int>> tmp;
-    int count_tmp = 0;
-    for (auto a : my_guards_in_Map) {
+  std::map<int, std::vector<int>> tmp;
+  int count_tmp = 0;
+  int count_tmp1 = 0;
+  int asleep = 0;
+  int awake = 0;
 
-        for (size_t i = 0; i < my_guards_in_Map.size(); ++i) {
-
-            count_tmp += a.second.at(i);
-        }
-        tmp[a.first].push_back(count_tmp);
-        count_tmp = 0;
-    }
-
-    int winnerMin = 0;
-    int winnerID = 0;
-
+  for (auto a : my_guards_in_Map) {
     int i = 0;
-    try {
-        for (auto a : tmp) {
-            if (winnerMin < a.second.at(0)) {
-                winnerMin = a.second.at(0);
-                winnerID = a.first;
-                ++i;
-            } else {
-                ++i;
-                continue;
-            }
-        }
-    } catch (const std::out_of_range &e) {
-        std::cerr << "Tmp size: " << tmp.size();
-        std::cerr << e.what();
-        throw;
+    auto &I = a.second.at(i);
+
+    for (auto b : a.second) {
+      if (i % 2 == 0) {
+        asleep = b;
+        i++;
+      } else {
+        awake = b;
+        count_tmp = awake - asleep;
+        count_tmp1 += count_tmp;
+        i++;
+      }
     }
+      tmp[a.first].push_back(count_tmp1);
+      count_tmp = 0;
+      count_tmp1 = 0;
+  }
 
-    std::cout << "*************** Winner is " << winnerID << " with " << winnerMin
-              << " minutes of sleep ***************" << '\n';
+    int current_winner = 0;
+    int current_winner_ID = 0;
+    for (auto a : tmp) {
 
-    sleeper[winnerID] = my_guards_in_Map.at(winnerID);
+      auto& entry_value = a.second.at(0);
 
-    std::cout << "End of finding sleeper\n";
+      if (current_winner < entry_value){
+
+          current_winner = entry_value;
+          current_winner_ID = a.first;
+      } else {
+          continue;
+      }
+
+
+
+  }
+
+
+  std::cout << "*************** Winner is " << current_winner_ID << " with " << current_winner
+            << " minutes of sleep ***************" << '\n';
+
+  sleeper[current_winner_ID] = my_guards_in_Map.at(current_winner_ID);
+
+  std::cout << "End of finding sleeper\n";
 } // finding guard that is sleeping most of the time
 
 void finding_minute(const std::map<int, std::vector<int>> &find_minute) {
@@ -219,8 +246,9 @@ void finding_minute(const std::map<int, std::vector<int>> &find_minute) {
     }
   }
 
-  std::cout << "********************* Answer is: " << highest_min * find_minute.begin()->first
+  std::cout << "********************* Answer is: "
+            << highest_min * find_minute.begin()->first
             << " *********************\n";
 
   std::cout << "End of finding minute\n";
-}
+} // finding the answer to the question minute * guardID
