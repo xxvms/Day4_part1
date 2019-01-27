@@ -1,11 +1,8 @@
 #include "Guards.h"
-#include <algorithm>
 //#include <chrono>
 #include <fstream>
-#include <iostream>
 #include <map>
 #include <sstream>
-#include <string>
 #include <vector>
 
 void read_file_string(std::vector<std::string> &import_file);
@@ -15,7 +12,12 @@ void convert_to_map(const std::vector<Guards> &input_from_vector,
                     std::map<int, std::vector<int>> &my_guards_in_Map);
 void finding_sleeper(const std::map<int, std::vector<int>> &my_guards_in_Map,
                      std::map<int, std::vector<int>> &sleeper);
-void finding_minute(const std::map<int, std::vector<int>> &find_minute);
+int finding_minute(const std::map<int, std::vector<int>> &find_minute); //, std::vector<int> m = std::vector<int>()
+
+void most_common_minute(std::map<int, std::vector<int>> &find_guard );
+
+std::pair<int, int> finding_minute(const std::pair<int, std::vector<int>> &find_minutes);
+
 
 int main() {
 
@@ -38,7 +40,9 @@ int main() {
 
   finding_minute(sleeping_beauty);
 
-  std::cout << "End of main\n";
+  most_common_minute(file_with_g);
+
+  std::cout << "End of " << __FUNCTION__ << '\n';
 
   return 0;
 }
@@ -56,7 +60,7 @@ void read_file_string(std::vector<std::string> &import_file) {
 
   std::ofstream my_file("Sorted_file.txt");
 
-  for (auto a : import_file) {
+  for (auto const &a : import_file) {
     my_file << a << '\n';
   }
 
@@ -210,9 +214,10 @@ void finding_sleeper(const std::map<int, std::vector<int>> &my_guards_in_Map,
   std::cout << "End of finding sleeper\n";
 } // finding guard that is sleeping most of the time
 
-void finding_minute(const std::map<int, std::vector<int>> &find_minute) {
+int finding_minute(const std::map<int, std::vector<int>> &find_minute) {
 
-  std::vector<int> move_to_vec{}; //(60, 0);
+
+  std::vector<int> move_to_vec{};
   std::vector<int> matrix(60, 0);
 
   for (auto a : find_minute) {
@@ -251,4 +256,65 @@ void finding_minute(const std::map<int, std::vector<int>> &find_minute) {
             << " *********************\n";
 
   std::cout << "End of finding minute\n";
+  return highest_min;
+
+} // finding the answer to the question minute * guardID
+
+void most_common_minute(std::map<int, std::vector<int>> &find_guard ){
+
+  std::vector<std::pair <int, std::pair<int, int>>>m{};
+
+  for (auto& a: find_guard){
+
+    auto& A = a.first; // for testing purposes can be removed once function works as expected
+     if(a.first){
+
+       m.emplace_back(std::make_pair(a.first, finding_minute(a)));
+    }
+  }
+  m;
+    std::cout << "End of" << __FUNCTION__ <<"\n";
+} // finding what the guard with most common minute asleep
+
+std::pair<int, int> finding_minute(const std::pair<int, std::vector<int>> &find_minute) {
+
+
+  std::vector<int> move_to_vec{};
+  std::vector<int> matrix(60, 0);
+
+  for (int i : find_minute.second) {
+
+    move_to_vec.push_back(i);
+
+    }
+
+  for (int j = 0; j < move_to_vec.size(); j += 2) {
+
+    auto &I = move_to_vec.at(j);
+    auto &J = move_to_vec.at(j + 1);
+    for (size_t i = I; i <= J; i++) {
+
+      matrix.at(i)++;
+    }
+  }
+
+  size_t highest_min = 0;
+  size_t value_matrix = 0;
+
+  for (size_t i = 0; i < matrix.size(); ++i) {
+
+    auto &I = matrix.at(i);
+    if (value_matrix < I) {
+      highest_min = i;
+      value_matrix = I;
+
+    } else {
+      continue;
+    }
+  }
+
+  std::pair retrun_me = std::make_pair(highest_min, value_matrix);
+  std::cout << "End of " << __FUNCTION__ << '\n';
+  return retrun_me;
+
 } // finding the answer to the question minute * guardID

@@ -7,9 +7,9 @@
 Guards::Guards(int id, int asl, int awa): ID(id), asleep(asl), awake(awa){}
 
 
-Guards& Guards::operator=(Guards other) {
+/*Guards& Guards::operator=(Guards other) {
     std::swap(ID, other.ID);
     std::swap(asleep, other.asleep);
     std::swap(awake, other.awake);
-}
+}*/
 

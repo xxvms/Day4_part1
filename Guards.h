@@ -21,7 +21,7 @@ public:
 public:
     Guards() = default;
     Guards(int id,int asl, int awa);
-    Guards& operator=(Guards other);
+  //  Guards& operator=(Guards other);
     ~Guards() = default;
 };
 
