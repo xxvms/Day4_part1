@@ -1,8 +1,9 @@
 #include "Guards.h"
-//#include <chrono>
 #include <fstream>
 #include <map>
 #include <sstream>
+#include <tuple>
+#include <utility>
 #include <vector>
 
 void read_file_string(std::vector<std::string> &import_file);
@@ -12,12 +13,13 @@ void convert_to_map(const std::vector<Guards> &input_from_vector,
                     std::map<int, std::vector<int>> &my_guards_in_Map);
 void finding_sleeper(const std::map<int, std::vector<int>> &my_guards_in_Map,
                      std::map<int, std::vector<int>> &sleeper);
-int finding_minute(const std::map<int, std::vector<int>> &find_minute); //, std::vector<int> m = std::vector<int>()
+int finding_minute(const std::map<int, std::vector<int>> &
+                       find_minute); //, std::vector<int> m = std::vector<int>()
 
-void most_common_minute(std::map<int, std::vector<int>> &find_guard );
+void most_common_minute(std::map<int, std::vector<int>> &find_guard);
 
-std::pair<int, int> finding_minute(const std::pair<int, std::vector<int>> &find_minutes);
-
+std::pair<int, int>
+finding_minute(const std::pair<int, std::vector<int>> &find_minutes);
 
 int main() {
 
@@ -144,7 +146,7 @@ void convert_to_map(const std::vector<Guards> &input_from_vector,
      */
 
     my_guards_in_Map[id].push_back(asle);
-    my_guards_in_Map[id].push_back(awk-1); // add -1
+    my_guards_in_Map[id].push_back(awk - 1); // add -1
   }
 
   std::ofstream my_file("Input_from_vec.txt");
@@ -182,32 +184,28 @@ void finding_sleeper(const std::map<int, std::vector<int>> &my_guards_in_Map,
         i++;
       }
     }
-      tmp[a.first].push_back(count_tmp1);
-      count_tmp = 0;
-      count_tmp1 = 0;
+    tmp[a.first].push_back(count_tmp1);
+    count_tmp = 0;
+    count_tmp1 = 0;
   }
 
-    int current_winner = 0;
-    int current_winner_ID = 0;
-    for (auto a : tmp) {
+  int current_winner = 0;
+  int current_winner_ID = 0;
+  for (auto a : tmp) {
 
-      auto& entry_value = a.second.at(0);
+    auto &entry_value = a.second.at(0);
 
-      if (current_winner < entry_value){
+    if (current_winner < entry_value) {
 
-          current_winner = entry_value;
-          current_winner_ID = a.first;
-      } else {
-          continue;
-      }
-
-
-
+      current_winner = entry_value;
+      current_winner_ID = a.first;
+    } else {
+      continue;
+    }
   }
 
-
-  std::cout << "*************** Winner is " << current_winner_ID << " with " << current_winner
-            << " minutes of sleep ***************" << '\n';
+  std::cout << "*************** Winner is " << current_winner_ID << " with "
+            << current_winner << " minutes of sleep ***************" << '\n';
 
   sleeper[current_winner_ID] = my_guards_in_Map.at(current_winner_ID);
 
@@ -215,7 +213,6 @@ void finding_sleeper(const std::map<int, std::vector<int>> &my_guards_in_Map,
 } // finding guard that is sleeping most of the time
 
 int finding_minute(const std::map<int, std::vector<int>> &find_minute) {
-
 
   std::vector<int> move_to_vec{};
   std::vector<int> matrix(60, 0);
@@ -260,24 +257,43 @@ int finding_minute(const std::map<int, std::vector<int>> &find_minute) {
 
 } // finding the answer to the question minute * guardID
 
-void most_common_minute(std::map<int, std::vector<int>> &find_guard ){
+void most_common_minute(std::map<int, std::vector<int>> &find_guard) {
 
-  std::vector<std::pair <int, std::pair<int, int>>>m{};
+  int one = 0, two = 0, three = 0;
+  std::vector<std::pair<int, std::pair<int, int>>> m{};
+  auto tmp = std::pair<int, std::pair<int, int>>(std::piecewise_construct,
+                                                 std::forward_as_tuple(0),
+                                                 std::forward_as_tuple(0, 0));
 
-  for (auto& a: find_guard){
+  for (auto &a : find_guard) {
 
-    auto& A = a.first; // for testing purposes can be removed once function works as expected
-     if(a.first){
+    auto &A = a.first; // for testing purposes can be removed once function
+                       // works as expected
+    if (a.first) {
 
-       m.emplace_back(std::make_pair(a.first, finding_minute(a)));
+      m.emplace_back(std::make_pair(a.first, finding_minute(a)));
     }
   }
-  m;
-    std::cout << "End of" << __FUNCTION__ <<"\n";
+
+  for (auto a : m) {
+
+    if (a.second.second > tmp.second.second){
+      tmp = a;
+    } else {
+      continue;
+    }
+  }
+  std::cout << "*********************************************************" << '\n';
+
+  std::cout << "Your guard ID is " << tmp.first << ", " << "with most common minute: " << tmp.second.first << " resulting with " << tmp.first * tmp.second.first << '\n';
+  std::cout << "*********************************************************" << '\n';
+
+
+  //std::cout << "End of " << __FUNCTION__ << "\n";
 } // finding what the guard with most common minute asleep
 
-std::pair<int, int> finding_minute(const std::pair<int, std::vector<int>> &find_minute) {
-
+std::pair<int, int>
+finding_minute(const std::pair<int, std::vector<int>> &find_minute) {
 
   std::vector<int> move_to_vec{};
   std::vector<int> matrix(60, 0);
@@ -285,8 +301,7 @@ std::pair<int, int> finding_minute(const std::pair<int, std::vector<int>> &find_
   for (int i : find_minute.second) {
 
     move_to_vec.push_back(i);
-
-    }
+  }
 
   for (int j = 0; j < move_to_vec.size(); j += 2) {
 
@@ -314,7 +329,7 @@ std::pair<int, int> finding_minute(const std::pair<int, std::vector<int>> &find_
   }
 
   std::pair retrun_me = std::make_pair(highest_min, value_matrix);
-  std::cout << "End of " << __FUNCTION__ << '\n';
+//  std::cout << "End of " << __FUNCTION__ << '\n';
   return retrun_me;
 
 } // finding the answer to the question minute * guardID
